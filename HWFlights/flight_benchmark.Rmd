@@ -48,7 +48,7 @@ max_delay_per_airline <-
     summarise(max_dep_delays = sum(dep_delay), 
               max_arr_delays = sum(arr_delay)) 
 
-## aqui me gustaria saber como hacer los 
+## aqui me gustaria saber como hacer pipe (%>%)
 max_delay_per_airline
 airline_max_dep_delay <- max(max_delay_per_airline$max_dep_delays)
 idx_carrier_dep <- which(airline_max_dep_delay == max_delay_per_airline$max_dep_delays )
